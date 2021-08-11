@@ -1,0 +1,49 @@
+body {
+  background: lightyellow;
+  font: 18px OpenSans, sans-serif;
+}
+
+h1 {
+  color: orange;
+}
+button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1em;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #405665;
+  padding: 12px 20px;
+  color: #444;
+  background-color: transparent;
+  position: relative;
+  z-index: 300;
+  overflow: hidden;
+  transition: color ease-in 80ms 200ms,
+      background-color ease-in 150ms 200ms,
+      box-shadow ease-in-out 200ms 0ms,
+      border ease-in-out 200ms 0ms;
+}
+button:hover {
+  border-color: #476376;
+  box-shadow: 0px 3px 0px 0px #31424E;
+  color: #fff;
+  transition: color ease-in 80ms 200ms,
+              background-color ease-in 200ms 200ms,
+              box-shadow linear 200ms
+}
+button:focus {
+  -webkit-box-shadow: 0px 0px 2px 2px currentColor;
+  -moz-box-shadow: 0px 0px 2px 2px currentColor;
+  box-shadow: 0px 0px 2px 2px currentColor;
+  outline: none;
+  background-color: transparent;
+}
+button:active {
+  background-color: #476376;
+  border-color: #476376;
+  color: #fff;
+  -webkit-box-shadow: 3px 0px 0px 0px currentColor;
+  -moz-box-shadow: 3px 0px 0px 0px currentColor;
+  box-shadow: 3px 0px 0px 0px currentColor;
+}
